@@ -29,14 +29,13 @@ html, body {
 
 #game {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: max(100vw, 177.7778vh);
+    height: max(56.25vw, 100vh);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: none;
     background: #000;
-
-    /* Crop Miniplay's bottom branding */
     clip-path: inset(0 0 65px 0);
 }
 </style>
@@ -48,7 +47,7 @@ html, body {
     <iframe
         id="game"
         src="https://www.miniplay.com/embed/five-nights-at-frickbears-3"
-        allow="autoplay; fullscreen; gamepad"
+        allow="autoplay; fullscreen; gamepad; pointer-lock"
         allowfullscreen>
     </iframe>
 </div>
